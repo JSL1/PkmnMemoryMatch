@@ -1,0 +1,103 @@
+:root {
+
+}
+
+body {
+  margin: 0px;
+  background-color: #fff6b4;
+}
+
+.App {
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffe639;
+  color: #292920;
+  margin: 0px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#header h2 {
+  font-family: 'Lobster', cursive;
+}
+
+.logo {
+  width: 70vw;
+}
+
+#game {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 0px;
+}
+
+button {
+  border: 2px solid #222224;
+  background-color: #f0f0f0;
+  color: #222224;
+  border-radius: 4px;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.redx {
+  width: 40px;
+  padding: 10px;
+  height: auto;
+  display: inline;
+  font-size: 4rem;
+  font-family: 'Lobster', cursive;
+  color: #EE1515;
+}
+
+.card-grid {
+  margin: 0px auto;
+  padding: 10px;
+  display: grid;
+  grid-gap: 6px;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  width: 50vw;
+}
+
+.card {
+  position: relative;
+}
+
+.card img{
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 100%;
+  display: block;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  position:absolute;
+  transition: all ease-in-out 0.2s;
+  background-color: #FFCB05;
+
+}
+
+.card .back {
+  background-color: #003A70;
+  transition: all ease-in-out 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+}
+
+.flipped .back {
+  display: none;
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+  transition: all ease-in-out 0.2s;
+}
+
+#footer {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
